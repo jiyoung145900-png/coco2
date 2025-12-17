@@ -21,14 +21,21 @@
             user-select: none;
         }
         
-        /* Logo Code for Upper Right Diagonal Placement */
-        .fixed-logo-container {
-            position: fixed;
-            top: 40px;
-            right: 340px;
-            z-index: 95;
-            pointer-events: none;
-        }
+      /* 로고 컨테이너 (위치 결정) */
+.fixed-logo-container {
+    position: fixed;
+    top: 40px;
+    right: 340px;
+    z-index: 95;
+    pointer-events: none;
+}
+
+/* 로고 이미지 자체 (여기서 사이즈 조절!) */
+.fixed-logo-container img {
+    width: 150px;  /* 👈 이 숫자를 키우거나 줄여서 사이즈를 조절하세요 */
+    height: auto;  /* 비율에 맞춰 자동으로 높이 조절 */
+    opacity: 0.9;  /* 약간 투명하게 하고 싶다면 추가 (선택사항) */
+}
 
         .wrap {
             flex-grow: 1;
